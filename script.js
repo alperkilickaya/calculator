@@ -111,7 +111,10 @@ function clearAll(){
 }
 
 function deleteLast(){
-    displayValue = displayValue.slice(0,-1);
+    if(displayValue.length > 1){ // ekranda tek sayı kalınca da silmesin diye
+        displayValue = displayValue.slice(0,-1);
+    }
+    
 }
 
 function Abs(){
